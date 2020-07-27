@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:wght@400;700&display=swap");
+body {
+  font-family: 'Roboto', serif;
+  font-size: 14px;
+  line-height: 1.4;
+  background-color: #fff;
+  color: #252525;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.point::after {
+  content: '.';
+  color: #3333ff;
+  font-size: 24px;
+}
+
+.header {
+  min-height: 50px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.header__row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  font-size: 20px;
+  font-family: 'Lato', serif;
+  font-weight: 700;
+  color: #0c0c81;
+}
+
+.header__navigation {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__navigation li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  list-style-type: none;
+  margin-right: 20px;
+}
