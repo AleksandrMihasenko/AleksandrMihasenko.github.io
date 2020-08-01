@@ -22,11 +22,9 @@ body {
 }
 
 .title {
-    margin: 0;
     font-size: 30px;
-    line-height: 1.4;
     font-weight: 700;
-    font-family: 'Lato', serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .btn {
@@ -109,7 +107,7 @@ body {
     min-height: 200px;
     display: flex;
     justify-content: space-between;
-    padding: 35px 0 35px 0;
+    padding: 35px 0 20px 0;
     border-bottom: 1px solid #e3e3e3;
 
     &__text {
@@ -117,7 +115,7 @@ body {
     }
 
     &__title {
-        margin-bottom: 30px;
+        margin: 0 0 30px 0;
         font-size: 36px;
         line-height: 1.25;
     }
@@ -185,15 +183,51 @@ body {
     }
 }
 
-.section {
+.skills {
+    width: 100%;
+    min-height: 200px;
     display: flex;
-    .one {
-        height: 20px;
-        background-color: grey;
+    padding: 35px 0 20px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e3e3e3;
+
+    &__about {
+        max-width: 33.33%;
+        margin-right: 40px;
     }
 
-    .two {
-        height: 20px;
-        background-color: red;
+    &__title {
+        font-size: 30px;
+        margin: 0 0 10px 0;
     }
+
+    &__descr {
+        font-size: 16px;
+        opacity: 0.8;
+    }
+
+    &__items {
+        max-width: 66.66%;
+        padding-left: -40px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        width: 320px;
+        margin: 0 15px 0 15px;
+
+        .item__title {
+            font-size: 16px;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+
+        .item__descr {
+            font-size: 16px;
+            opacity: 0.8;
+        }
+    }
+
 }
+
