@@ -313,3 +313,100 @@ body {
   opacity: 0.8;
   margin-bottom: 25px;
 }
+
+.education {
+  width: 100%;
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 35px 0 20px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.education__about {
+  width: 33.333%;
+  margin-right: 80px;
+}
+
+.education__title {
+  font-size: 30px;
+  margin: 0 0 10px 0;
+}
+
+.education__descr {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.education__places {
+  width: 66.666%;
+  padding-left: -40px;
+}
+
+.education__item {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.education__item:last-child {
+  border-bottom: none;
+}
+
+.education__item span {
+  margin-left: 20px;
+  color: #585757;
+  font-size: 15px;
+}
+
+.education__item .item-title {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: 5px;
+}
+
+.education__item .item-descr {
+  font-size: 16px;
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+
+.portfolio {
+  width: 100%;
+  min-height: 200px;
+  padding: 35px 0 20px 0;
+  margin-bottom: 20px;
+}
+
+.portfolio__title {
+  font-size: 30px;
+  margin: 0 0 10px 0;
+}
+
+.portfolio__works {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portfolio__item {
+  max-width: 250px;
+  height: 300px;
+  margin: 20px;
+}
+
+.footer {
+  padding: 15px 0 15px;
+  background-color: #efefef;
+  text-align: center;
+  font-size: 16px;
+  color: #252525;
+  opacity: 0.8;
+}
