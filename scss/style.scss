@@ -46,9 +46,11 @@ body {
     }
 }
 
-
-
 .header {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    z-index: 5;
     min-height: 50px;
     border-bottom: 1px solid #e3e3e3;
 
@@ -60,6 +62,7 @@ body {
     }
 
     &__logo {
+        cursor: pointer;
         font-size: 20px;
         font-family: 'Lato', serif;
         font-weight: 700;
@@ -103,6 +106,8 @@ body {
 }
 
 .about-me {
+    position: relative;
+    top: 50px;
     width: 100%;
     min-height: 200px;
     display: flex;
@@ -368,9 +373,55 @@ body {
     }
 
     &__item {
-        max-width: 250px;
-        height: 300px;
-        margin: 20px;
+        width: 280px;
+        height: 200px;
+        margin: 20px;       
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    &__link-work {
+        display: block;
+        cursor: pointer;
+        color: #333;
+        font-size: 16px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__link-github {
+        display: block;
+        background-color: #333;
+        margin-top: 7px;
+
+        &:hover {
+            background-color: orange;
+            color: #333;
+            box-shadow: 10px 10px 21px -8px rgba(0, 0, 0, 0.8);
+        }
+        
+        div {
+            text-align: center;
+            color: #fff;
+        }
+    }
+
+    &__btn {
+        background-color: #8f98c9;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;   
+
+        &:hover {
+            background-color: orange;
+            color: #333;
+            box-shadow: 10px 10px 21px -8px rgba(0, 0, 0, 0.8);
+        }
     }
 }
 

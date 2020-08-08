@@ -47,6 +47,10 @@ body {
 }
 
 .header {
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  z-index: 5;
   min-height: 50px;
   border-bottom: 1px solid #e3e3e3;
 }
@@ -65,6 +69,7 @@ body {
 }
 
 .header__logo {
+  cursor: pointer;
   font-size: 20px;
   font-family: 'Lato', serif;
   font-weight: 700;
@@ -111,6 +116,8 @@ body {
 }
 
 .about-me {
+  position: relative;
+  top: 50px;
   width: 100%;
   min-height: 200px;
   display: -webkit-box;
@@ -397,9 +404,58 @@ body {
 }
 
 .portfolio__item {
-  max-width: 250px;
-  height: 300px;
+  width: 280px;
+  height: 200px;
   margin: 20px;
+}
+
+.portfolio__item a {
+  text-decoration: none;
+}
+
+.portfolio__link-work {
+  display: block;
+  cursor: pointer;
+  color: #333;
+  font-size: 16px;
+}
+
+.portfolio__link-work img {
+  width: 100%;
+  height: auto;
+}
+
+.portfolio__link-github {
+  display: block;
+  background-color: #333;
+  margin-top: 7px;
+}
+
+.portfolio__link-github:hover {
+  background-color: orange;
+  color: #333;
+  -webkit-box-shadow: 10px 10px 21px -8px rgba(0, 0, 0, 0.8);
+          box-shadow: 10px 10px 21px -8px rgba(0, 0, 0, 0.8);
+}
+
+.portfolio__link-github div {
+  text-align: center;
+  color: #fff;
+}
+
+.portfolio__btn {
+  background-color: #8f98c9;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+.portfolio__btn:hover {
+  background-color: orange;
+  color: #333;
+  -webkit-box-shadow: 10px 10px 21px -8px rgba(0, 0, 0, 0.8);
+          box-shadow: 10px 10px 21px -8px rgba(0, 0, 0, 0.8);
 }
 
 .footer {
