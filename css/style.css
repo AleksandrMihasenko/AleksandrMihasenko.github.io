@@ -1,15 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300&display=swap");
+html {
+  font-size: 15px;
+}
+
 body {
-  font-family: 'Roboto', serif;
-  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
   line-height: 1.56;
   background-color: #fff;
-  color: #252525;
 }
 
 .container {
-  width: 1170px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem 0 1rem;
   margin: 0 auto;
 }
 
@@ -47,6 +51,7 @@ body {
 }
 
 .header {
+  padding: 1.2rem 0;
   position: fixed;
   background-color: #fff;
   width: 100%;
@@ -56,7 +61,6 @@ body {
 }
 
 .header__row {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,51 +72,58 @@ body {
           align-items: center;
 }
 
-.header__logo {
-  cursor: pointer;
-  font-size: 20px;
-  font-family: 'Lato', serif;
-  font-weight: 700;
-  color: #060647;
-}
-
-.header__navigation {
-  width: 85%;
+.user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
-.header__navigation li {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  list-style-type: none;
-  margin-right: 20px;
+.user__avatar {
+  width: 57px;
+  height: 57px;
 }
 
-.header__navigation li a {
-  color: #252525;
+.user__avatar img {
+  border-radius: 100%;
+}
+
+.user__content {
+  padding-left: 9px;
+}
+
+.user__name {
+  font-size: 1.06rem;
+  line-height: 1.2;
+  color: #2b2a2c;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.user__prof {
+  font-size: 0.8rem;
+  color: rgba(43, 42, 44, 0.7);
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.navigation__link {
+  padding: 8px 25px;
+  font-size: 0.93rem;
+  color: #2b2a2c;
   text-transform: uppercase;
-  font-size: 12px;
-  font-family: 'Lato', serif;
-  font-weight: 700;
-  line-height: 1.5;
+  font-weight: bold;
   text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 20px;
 }
 
-.header__navigation li a:hover {
-  color: #3333ff;
-  text-decoration: underline;
-}
-
-.header__navigation li a:active {
-  color: #3333ff;
-  opacity: 0.7;
-  text-decoration: underline;
+.navigation__link:hover {
+  border: 2px solid #2b2a2c;
 }
 
 .about-me {
@@ -212,6 +223,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 35px 0 20px 0;
+  margin-top: 60px;
   margin-bottom: 20px;
   border-bottom: 1px solid #e3e3e3;
 }
