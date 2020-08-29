@@ -481,6 +481,53 @@ body {
     }
 }
 
+.skills {
+    padding: 1rem 0;
+
+    &__row {
+        display: flex;
+    }
+
+    &__inspire {
+        flex-basis: 33.33%;
+        padding-right: 3rem;
+    }
+
+    &__title {
+        font-size: 2.2rem;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    &__descr {
+        font-size: 1rem;
+        color: rgba($black, .75);
+        line-height: 1.4;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    &__subtitle {
+        font-size: 1.1rem;
+        color: rgba($black, .9);
+        margin: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    &__text {
+        flex-basis: 66.66%;
+        margin: 0 1.5rem 0 -1.5rem;
+    }
+
+    &__item {
+        margin-bottom: 1rem;
+
+        &:last-child {
+            margin-bottom: 3rem;
+        }
+    }
+}
+
 .footer {
     padding: 15px 0 15px;
     background-color: #efefef;
