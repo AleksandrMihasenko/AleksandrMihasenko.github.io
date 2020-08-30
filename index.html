@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="no-scroll">
     
     <main>
         <header class="header">
@@ -210,7 +210,46 @@
             </div>
         </footer>
 
+        <!-- modals -->
+
+        <div class="modal">
+            <div class="modal__dialog">
+
+                <div class="modal__close">&#10005;</div>
+
+                <div class="modal-work">
+
+                    <div class="modal-work__preview">
+                        <img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
+                    </div>
+                    <div class="modal-work__content">
+
+                        <div class="modal-work__header">
+                            <h3 class="modal-work__title">Project title</h3>
+                            <div class="modal-work__info">Category | website</div>
+                        </div>
+
+                        <div class="modal-work__techno">
+                            <div class="modal-work__techno-title">Используемые технологии:</div>
+                            <div class="modal-work__techno-descr">Lorem ipsum dolor sit amet.</div>
+                        </div>
+
+                        <div class="modal-work__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio inventore consequatur qui eveniet maxime ea minus quisquam architecto corrupti pariatur.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio inventore consequatur qui eveniet maxime ea minus quisquam architecto corrupti pariatur.</p>
+                        </div>
+
+                        <div class="modal-work__footer">
+                            <button type="button" class="modal-work__btn modal-work__btn-prev"> <img src="/images/back.svg" alt="back button"> Предыдущее</button>
+                            <button type="button" class="modal-work__btn modal-work__btn-next">Следующее <img src="/images/next.svg" alt="next button"> </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </main>
 
-</body>
+</body class="no-scroll">
 </html>
