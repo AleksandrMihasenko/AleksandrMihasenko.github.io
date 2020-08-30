@@ -49,6 +49,16 @@ body {
     }
 }
 
+.text-right {
+    text-align: right;
+    padding-right: 3.2rem;
+}
+
+.text-left {
+    text-align: left;
+    padding-left: 3.2rem;
+}
+
 .header {
     padding: 1.2rem 0;
     background-color: #fff;
@@ -431,6 +441,24 @@ body {
     z-index: 1000;
     overflow: auto;
 
+    &__content {
+        padding: 5rem 1rem;
+    }
+
+    &__title {
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: $black;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+    }
+
     &__dialog {
         position: relative;
         width: 100%;
@@ -557,4 +585,110 @@ body {
             }
         }
     }
+}
+
+.timeline {
+    position: relative;
+    display: flex;
+    margin: 4rem auto;
+    width: 100%;
+    min-width: 768px;
+
+    &::before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 1px;
+        height: 100%;
+        background-color: $black;
+        top: 0;
+        left: 50%;
+        z-index: 2000;
+    }
+
+
+    &__col {
+        width: 50%;
+    }
+
+    &__item {
+        margin-bottom: 2.5rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__title {
+        font-size: 1.2rem;
+        color: $black;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 2.5rem;
+    }
+
+    &__date {
+        display: block;
+        text-decoration: underline;
+        font-size: 1rem;
+        color: $black;
+        margin-bottom: 0.8rem;
+    }
+
+    &__subtitle {
+        font-size: 1.1rem;
+        color: $black;
+        font-weight: bold;
+        margin-bottom: 0.2rem;
+    }
+
+    &__position {
+        font-size: 0.9rem;
+        color: $black;
+        font-style: italic;
+    }
+
+    &__text {
+        font-size: 0.8rem;
+        color: $grey;
+        font-weight: thin;
+        line-height: 1.5;
+        margin-top: 1rem;
+    }
+}
+
+.progress-bar {
+
+    &__item {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5rem;
+    }
+
+    &__right {
+        padding-left: 1.2rem;
+    }
+
+    &__title {
+        font-size: 1rem;
+        font-weight: thin;
+    }
+
+    &__bar {
+        width: 9rem;
+        height: 0.4rem;
+        background-color: rgba($grey-light, .5);
+    }
+
+    &__progress {
+        height: 100%;
+        background-color: $grey;
+        width: 70%;
+    }
+}
+
+.modal-close {
+    display: none;
 }
