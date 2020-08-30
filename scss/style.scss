@@ -183,173 +183,6 @@ body {
     }
 }
 
-// .skills {
-//     width: 100%;
-//     min-height: 200px;
-//     display: flex;
-//     padding: 35px 0 20px 0;
-//     margin-top: 30px;
-//     margin-bottom: 20px;
-//     border-bottom: 1px solid #e3e3e3;
-
-//     &__about {
-//         max-width: 33.33%;
-//         margin-right: 40px;
-//     }
-
-//     &__title {
-//         font-size: 30px;
-//         margin: 0 0 10px 0;
-//     }
-
-//     &__descr {
-//         font-size: 16px;
-//         opacity: 0.8;
-//     }
-
-//     &__items {
-//         max-width: 66.66%;
-//         padding-left: -40px;
-//         display: flex;
-//         flex-wrap: wrap;
-//     }
-
-//     &__item {
-//         width: 320px;
-//         margin: 0 15px 0 15px;
-
-//         .item__title {
-//             font-size: 16px;
-//             opacity: 0.9;
-//             margin-bottom: 5px;
-//         }
-
-//         .item__descr {
-//             font-size: 16px;
-//             opacity: 0.8;
-//         }
-//     }
-
-// }
-
-// .experience {
-//     width: 100%;
-//     min-height: 200px;
-//     display: flex;
-//     padding: 35px 0 20px 0;
-//     margin-bottom: 20px;
-//     border-bottom: 1px solid #e3e3e3;
-
-//     &__about {
-//         width: 33.333%;
-//         margin-right: 80px;
-//     }
-
-//     &__title {
-//         font-size: 30px;
-//         margin: 0 0 10px 0;
-//     }
-
-//     &__descr {
-//         font-size: 16px;
-//         opacity: 0.8;
-//     }
-
-//     &__places {
-//         width: 66.666%;
-//         padding-left: -40px;
-//     }
-
-//     &__item {
-//         margin-bottom: 25px;
-//         border-bottom: 1px solid #e3e3e3;
-
-//         &:last-child {
-//             border-bottom: none;
-//         }
-
-//         span {
-//             margin-left: 20px;
-//             color: rgb(88, 87, 87);
-//             font-size: 15px;
-//         }
-
-//         .item-title {
-//             font-size: 16px;
-//             opacity: 0.9;
-//             margin-bottom: 5px;
-//         }
-
-//         .item-time {
-//             font-size: 16px;
-//             opacity: 0.8;
-//             margin-bottom: 15px;
-//         }
-
-//         .item-descr {
-//             font-size: 16px;
-//             opacity: 0.8;
-//             margin-bottom: 25px;
-//         }
-//     }
-// }
-
-// .education {
-//     width: 100%;
-//     min-height: 200px;
-//     display: flex;
-//     padding: 35px 0 20px 0;
-//     margin-bottom: 20px;
-//     border-bottom: 1px solid #e3e3e3;
-
-//     &__about {
-//         width: 33.333%;
-//         margin-right: 80px;
-//     }
-
-//     &__title {
-//         font-size: 30px;
-//         margin: 0 0 10px 0;
-//     }
-
-//     &__descr {
-//         font-size: 16px;
-//         opacity: 0.8;
-//     }
-
-//     &__places {
-//         width: 66.666%;
-//         padding-left: -40px;
-//     }
-
-//     &__item {
-//         margin-bottom: 25px;
-//         border-bottom: 1px solid #e3e3e3;
-
-//         &:last-child {
-//             border-bottom: none;
-//         }
-
-//         span {
-//             margin-left: 20px;
-//             color: rgb(88, 87, 87);
-//             font-size: 15px;
-//         }
-
-//         .item-title {
-//             font-size: 16px;
-//             opacity: 0.9;
-//             margin-bottom: 5px;
-//         }
-
-//         .item-descr {
-//             font-size: 16px;
-//             opacity: 0.8;
-//             margin-bottom: 25px;
-//         }
-//     }
-// }
-
 .works {
     padding: 1rem 0;
 
@@ -529,10 +362,56 @@ body {
 }
 
 .footer {
-    padding: 15px 0 15px;
-    background-color: #efefef;
-    text-align: center;
-    font-size: 16px;
-    color: #252525;
-    opacity: 0.8;
+    background-color: $black;
+    padding: 1.35rem 0;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__copyright {
+        font-size: 1.1rem;
+        color: white;
+        margin-right: 1rem;
+    }
+
+    &__social {
+        display: flex;
+        flex-basis: 40%;
+        justify-content: center;
+        align-items: center;
+    
+        a {
+            display: block;
+            text-decoration: none;
+            color: $white;
+            margin: 10px 20px 0 20px;
+            transform: scale(2);
+    
+            span {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+
+    &__nav {
+        position: relative;
+        display: flex;
+        height: 100%;
+    }
+    
+    &__nav-link {
+        margin-left: 2rem;
+        font-size: 0.93rem;
+        color: $white;
+        text-transform: uppercase;
+        text-decoration: none;
+            
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
