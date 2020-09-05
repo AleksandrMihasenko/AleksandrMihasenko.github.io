@@ -11,7 +11,7 @@
 <!-- <body class="no-scroll"> -->
 <body>
     <main>
-        
+
         <header class="header">
             <div class="container">
                 <div class="header__row">
@@ -77,7 +77,7 @@
 
                 <div class="portfolio">
                     <div class="portfolio__row">
-                        <div class="work">
+                        <div data-modal="project-1" class="work">
                             <img class="work__img" src="images/pomodoro-clock.png" alt="pomodoro-clock">
 
                             <div class="work__content">
@@ -88,33 +88,11 @@
                     </div>
 
                     <div class="portfolio__row">
-                        <div class="work">
+                        <div data-modal="project-2" class="work">
                             <img class="work__img" src="images/pomodoro-clock.png" alt="pomodoro-clock">
 
                             <div class="work__content">
-                                <div class="work__title">Pomodoro-clock на чистом Javascript</div>
-                                <div class="work__link"><a href="https://aleksandrmihasenko.github.io/Pomodoro-clock/" target="_blank">Исходный код на GitHub</a></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="portfolio__row">
-                        <div class="work">
-                            <img class="work__img" src="images/pomodoro-clock.png" alt="pomodoro-clock">
-
-                            <div class="work__content">
-                                <div class="work__title">Pomodoro-clock на чистом Javascript</div>
-                                <div class="work__link"><a href="https://aleksandrmihasenko.github.io/Pomodoro-clock/" target="_blank">Исходный код на GitHub</a></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="portfolio__row">
-                        <div class="work">
-                            <img class="work__img" src="images/pomodoro-clock.png" alt="pomodoro-clock">
-
-                            <div class="work__content">
-                                <div class="work__title">Pomodoro-clock на чистом Javascript</div>
+                                <div class="work__title">калькулятор на чистом Javascript</div>
                                 <div class="work__link"><a href="https://aleksandrmihasenko.github.io/Pomodoro-clock/" target="_blank">Исходный код на GitHub</a></div>
                             </div>
                         </div>
@@ -213,7 +191,7 @@
 
         <!-- modals -->
 
-        <div class="modal modal-close">
+        <div id="project-1" class="modal modal-close">
             <div class="modal__dialog">
 
                 <div class="modal__close">&#10005;</div>
@@ -226,8 +204,45 @@
                     <div class="modal-work__content">
 
                         <div class="modal-work__header">
-                            <h3 class="modal-work__title">Project title</h3>
-                            <div class="modal-work__info">Category | website</div>
+                            <h3 class="modal-work__title">Pomodoro-clock</h3>
+                            <div class="modal-work__info">Category | Javascript app</div>
+                        </div>
+
+                        <div class="modal-work__techno">
+                            <div class="modal-work__techno-title">Используемые технологии:</div>
+                            <div class="modal-work__techno-descr">HTML, CSS, Javascript</div>
+                        </div>
+
+                        <div class="modal-work__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio inventore consequatur qui eveniet maxime ea minus quisquam architecto corrupti pariatur.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio inventore consequatur qui eveniet maxime ea minus quisquam architecto corrupti pariatur.</p>
+                        </div>
+
+                        <div class="modal-work__footer">
+                            <button type="button" class="modal-work__btn modal-work__btn-prev"> <img src="/images/back.svg" alt="back button"> Предыдущее</button>
+                            <button type="button" class="modal-work__btn modal-work__btn-next">Следующее <img src="/images/next.svg" alt="next button"> </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="project-2" class="modal modal-close">
+            <div class="modal__dialog">
+
+                <div class="modal__close">&#10005;</div>
+
+                <div class="modal-work">
+
+                    <div class="modal-work__preview">
+                        <img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
+                    </div>
+                    <div class="modal-work__content">
+
+                        <div class="modal-work__header">
+                            <h3 class="modal-work__title">Calculator</h3>
+                            <div class="modal-work__info">Category | Javascript app</div>
                         </div>
 
                         <div class="modal-work__techno">
@@ -250,12 +265,12 @@
             </div>
         </div>
 
-        <div class="modal modal-close">
-            <div class="modal__dialog">
+        <div class="modal-resume modal-close">
+            <div class="modal-resume__dialog">
 
-                <div class="modal__close">&#10005;</div>
+                <div class="modal-resume__close">&#10005;</div>
 
-                <div class="modal__image">
+                <div class="modal-resume__image">
                     <img src="./images/Резюме-Михасенко-Александр.jpg" alt="resume">
                 </div>
                 
@@ -354,4 +369,5 @@
     </main>
 
 </body class="no-scroll">
+<script src="/js/script.js"></script>
 </html>
