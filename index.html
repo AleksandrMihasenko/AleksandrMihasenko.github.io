@@ -32,11 +32,13 @@
                             <a class="navigation__link" href="#about-me">Обо мне</a>
                             <a class="navigation__link" href="#skills">Умения</a>
                         </ul>
-                    </nav>
 
-                    <div class="burger">
-                        <span></span>
-                    </div>
+                        <div class="gamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </nav>
 
                 </div>                
             </div>
@@ -65,7 +67,7 @@
                             </a>
                         </div>
 
-                        <a href="#" class="btn">Посмотреть резюме</a>
+                        <a href="#" class="btn btn-hidden">Посмотреть резюме</a>
                         <a href="./images/Резюме-Михасенко-Александр.jpg" download class="btn">Скачать резюме</a>
                     </div>
 
@@ -83,7 +85,8 @@
                 <div class="portfolio">
                     <div class="portfolio__row">
                         <div data-modal="project-1" class="work">
-                            <img class="work__img" src="images/pomodoro-clock.png" alt="pomodoro-clock">
+                            <div class="work__img-wrap-1">
+                            </div>
 
                             <div class="work__content">
                                 <div class="work__title">Pomodoro-clock на чистом Javascript</div>
@@ -94,32 +97,11 @@
 
                     <div class="portfolio__row">
                         <div data-modal="project-2" class="work">
-                            <img class="work__img" src="images/pomodoro-clock.png" alt="pomodoro-clock">
-
-                            <div class="work__content">
-                                <div class="work__title">калькулятор на чистом Javascript</div>
-                                <div class="work__link"><a href="https://aleksandrmihasenko.github.io/Pomodoro-clock/" target="_blank">Исходный код на GitHub</a></div>
+                            <div class="work__img-wrap-2">
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="portfolio__row">
-                        <div data-modal="project-3" class="work">
-                            <img class="work__img" src="images/pomodoro-clock.png" alt="pomodoro-clock">
 
                             <div class="work__content">
-                                <div class="work__title">калькулятор на чистом Javascript</div>
-                                <div class="work__link"><a href="https://aleksandrmihasenko.github.io/Pomodoro-clock/" target="_blank">Исходный код на GitHub</a></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="portfolio__row">
-                        <div data-modal="project-4" class="work">
-                            <img class="work__img" src="images/pomodoro-clock.png" alt="pomodoro-clock">
-
-                            <div class="work__content">
-                                <div class="work__title">калькулятор на чистом Javascript</div>
+                                <div class="work__title">Калькулятор на чистом Javascript</div>
                                 <div class="work__link"><a href="https://aleksandrmihasenko.github.io/Pomodoro-clock/" target="_blank">Исходный код на GitHub</a></div>
                             </div>
                         </div>
@@ -226,7 +208,7 @@
                 <div class="modal-work">
 
                     <div class="modal-work__preview">
-                        <img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
+                        <img class="modal-work__photo" src="/images/pomodoro-clock-modal.png" alt="app image">
                     </div>
                     <div class="modal-work__content">
 
@@ -241,14 +223,18 @@
                         </div>
 
                         <div class="modal-work__text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio inventore consequatur qui eveniet maxime ea minus quisquam architecto corrupti pariatur.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio inventore consequatur qui eveniet maxime ea minus quisquam architecto corrupti pariatur.</p>
+                            <p>Использовал чистый javascript. Проект сделал для тренировки и понимания работы с DOM деревом, манипулирования им, отрисовки данных через javascript.</p>
+                            <p>Необходимость в последующем рефакторинге и улучшении.</p>
                         </div>
 
                         <div class="modal-work__footer">
+                            <a href="https://aleksandrmihasenko.github.io/Pomodoro-clock/">Открыть в отдельном окне</a>
+                        </div>
+
+                        <!-- <div class="modal-work__footer">
                             <button type="button" class="modal-work__btn modal-work__btn-prev"> <img src="/images/back.svg" alt="back button"> Предыдущее</button>
                             <button type="button" class="modal-work__btn modal-work__btn-next">Следующее <img src="/images/next.svg" alt="next button"> </button>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -263,7 +249,7 @@
                 <div class="modal-work">
 
                     <div class="modal-work__preview">
-                        <img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
+                        <img class="modal-work__photo" src="/images/calculator.png" alt="calculator-image">
                     </div>
                     <div class="modal-work__content">
 
@@ -283,9 +269,13 @@
                         </div>
 
                         <div class="modal-work__footer">
+                            <a href="https://aleksandrmihasenko.github.io/Javascript-calculator/">Открыть в отдельном окне</a>
+                        </div>
+
+                        <!-- <div class="modal-work__footer">
                             <button type="button" class="modal-work__btn modal-work__btn-prev"> <img src="/images/back.svg" alt="back button"> Предыдущее</button>
                             <button type="button" class="modal-work__btn modal-work__btn-next">Следующее <img src="/images/next.svg" alt="next button"> </button>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -397,4 +387,5 @@
 
 </body class="no-scroll">
 <script src="/js/script.js"></script>
+<script src="/js/gamburger-menu.js"></script>
 </html>

@@ -54,8 +54,10 @@ body {
         font-size: 0.8rem;
         width: 150px;
     }
+}
 
-    @media (max-width: 575px) {
+.btn-hidden {
+    @media (max-width: 600px) {
         display: none;
     }
 }
@@ -136,13 +138,19 @@ body {
     }
 }
 
+.user {
+    @media (max-width: 600px) {
+        display: none;
+    }
+}
+
 .navigation {
     position: relative;
     display: flex;
     height: 100%;
 
     &__link {
-        margin-left: 2rem;
+        margin-left: 1.5rem;
         font-size: 0.93rem;
         color: $black;
         text-transform: uppercase;
@@ -154,9 +162,16 @@ body {
         }
     }
 
+    @media (max-width: 800px) {
+        &__link {
+            margin-left: 1.5rem;
+            font-size: 0.8rem;
+        }
+    }
+
     @media (max-width: 670px) {
         &__link {
-            margin-left: 2rem;
+            margin-left: 1rem;
             font-size: 0.7rem;
         }
     }
@@ -165,7 +180,71 @@ body {
 @media (max-width: 600px) {
 
     .navigation {
-        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: -1rem;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        padding: 1.4rem 1rem;
+        background-color: rgba($black, .8);
+        transition: all 0.6s linear;
+
+        &_active {
+            left: 0;
+        }
+
+        &__link {
+            font-size: 1.6rem;
+            color: $white;
+            font-weight: normal;
+            margin-bottom: 3rem;
+        }
+    }
+
+}
+
+.gamburger {
+    display: none;
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    width: 3rem;
+    cursor: pointer;
+
+    span {
+        display: block;
+        height: 4px;
+        width: 100%;
+        background-color: $black;
+        margin-bottom: 0.4rem;
+        translate: all .8s linear;
+    }
+
+    &_active {
+
+        span {
+
+            margin-bottom: -0.3rem;
+
+            &:nth-child(1) {
+                transform: rotate(45deg);
+            }
+
+            &:nth-child(2) {
+                display: none;
+            }
+
+            &:nth-child(3) {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        display: block;
     }
 }
 
@@ -261,25 +340,15 @@ body {
         }
     }
 
-    @media (max-width: 670px) {
-        &__title {
-            font-size: 1.5rem;
-        }
-    
-        &__subtitle {
-            font-size: 1rem;
-        }
-    
-        &__text {
-            font-size: 0.7rem;
-            margin-bottom: 0.7rem;
+    @media (max-width: 600px) {
+
+        &__row {
+            justify-content: center;
+            text-align: center;
         }
 
-        &__photo {
-            display: block;
-            width: 60%;
-            height: auto;
-            padding: 0 1rem 0 2rem;
+        &__image {
+            display: none;
         }
     }
 }
@@ -299,6 +368,10 @@ body {
             width: 100px;
             height: 100px;
         }
+    }
+
+    @media (max-width: 600px) {
+        justify-content: center;
     }
 }
 
@@ -324,7 +397,7 @@ body {
         padding: 1rem;
     }
 
-    @media (max-width: 670px) {
+    @media (max-width: 800px) {
 
         &__row {
             box-sizing: border-box;
@@ -333,7 +406,12 @@ body {
         }
     }
 
-
+    @media (max-width: 600px) {
+        &__row {
+            flex-basis: 100%;
+            margin-bottom: 2rem;
+        }
+    }
 }
 
 .work {
@@ -347,15 +425,24 @@ body {
         box-shadow: 0 0 25px rgba(#000000, .25);
     }
 
-    &__img {
-        display: block;
-        max-width: 100%;
-        height: auto;
+    &__img-wrap-1 {
+        width: 100%;
+        height: 11rem;
+        overflow: hidden;
+        background: url('../images/pomodoro-clock.png') center center/cover no-repeat;
+    }
+
+    &__img-wrap-2 {
+        width: 100%;
+        height: 11rem;
+        overflow: hidden;
+        background: url('../images/calculator.png') center center/cover no-repeat;
     }
 
     &__content {
         text-align: center;
         padding: 1rem 0.8rem ;
+        height: 6rem;
     }
 
     &__title {
@@ -455,6 +542,17 @@ body {
             font-size: 0.8rem;
         }
     }
+
+    @media (max-width: 600px) {
+
+        &__text {
+            margin: 0 auto;
+        }
+
+        &__inspire {
+            display: none;
+        }
+    }
 }
 
 .skills {
@@ -515,6 +613,17 @@ body {
     
         &__subtitle {
             font-size: 0.8rem;
+        }
+    }
+
+    @media (max-width: 600px) {
+
+        &__text {
+            margin: 0 auto;
+        }
+
+        &__inspire {
+            display: none;
         }
     }
 }
