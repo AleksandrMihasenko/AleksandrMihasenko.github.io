@@ -83,17 +83,6 @@
                 <div class="works__title">Мои работы</div>
 
                 <div class="portfolio">
-                    <div class="portfolio__row">
-                        <div data-modal="project-1" class="work">
-                            <div class="work__img-wrap-1">
-                            </div>
-
-                            <div class="work__content">
-                                <div class="work__title">Pomodoro-clock на чистом Javascript</div>
-                                <div class="work__link"><a href="https://aleksandrmihasenko.github.io/Pomodoro-clock/" target="_blank">Исходный код на GitHub</a></div>
-                            </div>
-                        </div>
-                    </div>
 
                     <div class="portfolio__row">
                         <div data-modal="project-2" class="work">
@@ -101,11 +90,35 @@
                             </div>
 
                             <div class="work__content">
-                                <div class="work__title">Калькулятор на чистом Javascript</div>
-                                <div class="work__link"><a href="https://aleksandrmihasenko.github.io/Pomodoro-clock/" target="_blank">Исходный код на GitHub</a></div>
+                                <div class="work__title">Верстка одностраничного сайта</div>
+                                <div class="work__link"><a href="https://github.com/AleksandrMihasenko/uber-landing" target="_blank">Исходный код на GitHub</a></div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="portfolio__row">
+                        <div data-modal="project-1" class="work">
+                            <div class="work__img-wrap-1">
+                            </div>
+
+                            <div class="work__content">
+                                <div class="work__title">Pomodoro-clock на чистом Javascript</div>
+                                <div class="work__link"><a href="https://github.com/AleksandrMihasenko/Pomodoro-clock" target="_blank">Исходный код на GitHub</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="portfolio__row">
+                        <div data-modal="project-2" class="work">
+                            <div class="work__img-wrap-2">
+                            </div>
+
+                            <div class="work__content">
+                                <div class="work__title">Калькулятор на чистом Javascript</div>
+                                <div class="work__link"><a href="https://aleksandrmihasenko.github.io/Javascript-calculator/" target="_blank">Исходный код на GitHub</a></div>
+                            </div>
+                        </div>
+                    </div> -->
                     
                 </div>
             </div>
@@ -200,6 +213,47 @@
 
         <!-- modals -->
 
+        <div id="project-2" class="modal modal-close">
+            <div class="modal__dialog">
+
+                <div class="modal__close">&#10005;</div>
+
+                <div class="modal-work">
+
+                    <div class="modal-work__preview">
+                        <img class="modal-work__photo" src="./images/uber-website-modal.png" alt="uber-website-image">
+                    </div>
+                    <div class="modal-work__content">
+
+                        <div class="modal-work__header">
+                            <h3 class="modal-work__title">Website</h3>
+                            <div class="modal-work__info">Category | Website layout</div>
+                        </div>
+
+                        <div class="modal-work__techno">
+                            <div class="modal-work__techno-title">Используемые технологии:</div>
+                            <div class="modal-work__techno-descr">HTML, SCSS, Javascript.</div>
+                        </div>
+
+                        <div class="modal-work__text">
+                            <p>Учебный проект по верстке. Использовался HTML и пре-процессор SCSS.</p>
+                            <p>Также попрактиковался в применении адаптивности.</p>
+                        </div>
+
+                        <div class="modal-work__footer">
+                            <a href="https://aleksandrmihasenko.github.io/uber-landing/" target="_blank">Открыть в отдельном окне</a>
+                        </div>
+
+                        <!-- <div class="modal-work__footer">
+                            <button type="button" class="modal-work__btn modal-work__btn-prev"> <img src="/images/back.svg" alt="back button"> Предыдущее</button>
+                            <button type="button" class="modal-work__btn modal-work__btn-next">Следующее <img src="/images/next.svg" alt="next button"> </button>
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
         <div id="project-1" class="modal modal-close">
             <div class="modal__dialog">
 
@@ -229,46 +283,6 @@
 
                         <div class="modal-work__footer">
                             <a href="https://aleksandrmihasenko.github.io/Pomodoro-clock/" target="_blank">Открыть в отдельном окне</a>
-                        </div>
-
-                        <!-- <div class="modal-work__footer">
-                            <button type="button" class="modal-work__btn modal-work__btn-prev"> <img src="/images/back.svg" alt="back button"> Предыдущее</button>
-                            <button type="button" class="modal-work__btn modal-work__btn-next">Следующее <img src="/images/next.svg" alt="next button"> </button>
-                        </div> -->
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div id="project-2" class="modal modal-close">
-            <div class="modal__dialog">
-
-                <div class="modal__close">&#10005;</div>
-
-                <div class="modal-work">
-
-                    <div class="modal-work__preview">
-                        <img class="modal-work__photo" src="./images/calculator-modal.png" alt="calculator-image">
-                    </div>
-                    <div class="modal-work__content">
-
-                        <div class="modal-work__header">
-                            <h3 class="modal-work__title">Calculator</h3>
-                            <div class="modal-work__info">Category | Javascript app</div>
-                        </div>
-
-                        <div class="modal-work__techno">
-                            <div class="modal-work__techno-title">Используемые технологии:</div>
-                            <div class="modal-work__techno-descr">HTML, CSS, Javascript.</div>
-                        </div>
-
-                        <div class="modal-work__text">
-                            <p>Второй проект с тренировкой javascript и работой с DOM. Также поработал со стилями для красивого отображения.</p>
-                        </div>
-
-                        <div class="modal-work__footer">
-                            <a href="https://aleksandrmihasenko.github.io/Javascript-calculator/" target="_blank">Открыть в отдельном окне</a>
                         </div>
 
                         <!-- <div class="modal-work__footer">

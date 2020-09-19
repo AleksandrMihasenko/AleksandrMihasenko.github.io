@@ -425,18 +425,18 @@ body {
         box-shadow: 0 0 25px rgba(#000000, .25);
     }
 
+    &__img-wrap-2 {
+        width: 100%;
+        height: 11rem;
+        overflow: hidden;
+        background: url('../images/uber-website.png') center center/cover no-repeat;
+    }
+
     &__img-wrap-1 {
         width: 100%;
         height: 11rem;
         overflow: hidden;
         background: url('../images/pomodoro-clock.png') center center/cover no-repeat;
-    }
-
-    &__img-wrap-2 {
-        width: 100%;
-        height: 11rem;
-        overflow: hidden;
-        background: url('../images/calculator.png') center center/cover no-repeat;
     }
 
     &__content {
