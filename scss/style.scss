@@ -425,6 +425,13 @@ body {
         box-shadow: 0 0 25px rgba(#000000, .25);
     }
 
+    &__img-wrap-4 {
+        width: 100%;
+        height: 11rem;
+        overflow: hidden;
+        background: url('../images/vue-todo-app.png') center center/cover no-repeat;
+    }
+
     &__img-wrap-3 {
         width: 100%;
         height: 11rem;
